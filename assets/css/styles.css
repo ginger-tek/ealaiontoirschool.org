@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Kells Uncial';
+  src: url('/assets/fonts/kellunc.ttf');
+}
+
+:root {
+  --crest-blue: #0000bd;
+  --crest-red: #e71800;
+  --crest-gold: #ffc600;
+}
+
+body {
+  font-family: Arial, 'Kells Uncial';
+}
