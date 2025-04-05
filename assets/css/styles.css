@@ -9,6 +9,15 @@
   --crest-gold: #ffc600;
 }
 
-body {
-  font-family: Arial, 'Kells Uncial';
+h4,
+h5,
+h6,
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Kells Uncial', Georgia, 'Times New Roman', Times, serif;
 }
