@@ -1,0 +1,32 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  job:
+    name: Deploy
+    runs-on: windows-latest
+    steps:
+    - shell: pwsh
+      env:
+        API_KEY: ${{ secrets.AWSMBX_API_KEY }}
+      run: |
+        $res = irm -Uri https://deploy.awsmbx.net -Method POST -Headers @{Authorization = $env:API_KEY } -Body (@{
+            site   = 'ealaiontoirschool.org'
+            remote = $true
+          } | ConvertTo-Json) -ContentType application/json
+        sleep 5
+        $jobId = $res.jobId
+        function getLog() {
+          return irm "https://deploy.awsmbx.net/$jobId" -Headers @{Authorization = $env:API_KEY }
+        }
+        $res = getLog
+        while ($res -notmatch 'END') {
+          $lines = ($res -split "`n" | ? { $_ -and $_ -notin $last }) -join "`n"
+          if ($lines) {
+            Write-Host $lines
+          }
+          $last = $res -split "`n"
+          sleep 2
+          $res = getLog
+        }
+        Write-Host (($res -split "`n" | ? { $_ -and $_ -notin $last }) -join "`n")
