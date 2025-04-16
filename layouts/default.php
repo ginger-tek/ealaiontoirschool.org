@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<body class="container">
+<body>
   <header class="container-fluid">
     <nav class="container">
       <ul>
@@ -31,7 +31,7 @@
       </ul>
       <ul>
         <li>
-          <a href="/about.html">About</a>
+          <a href="/about">About</a>
         </li>
       </ul>
     </nav>
