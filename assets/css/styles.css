@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Kells Uncial';
-  src: url('/assets/fonts/kellunc.woff2') format('woff2');
+  font-family: 'CAT Walzhari';
+  src: url('/assets/fonts/catwalzhari-webfont.woff2') format('woff2'),
+    url('/assets/fonts/catwalzhari-webfont.woff') format('woff');
 }
 
 :root,
@@ -9,12 +10,14 @@
   --crest-red: #e71800;
   --crest-gold: #ffc600;
 
+  /* Tweaks */
   --pico-primary: var(--crest-blue);
   --pico-primary-hover: var(--crest-blue);
+  --pico-border-radius: .5em;
+  --pico-font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
@@ -24,11 +27,14 @@ body {
   }
 }
 
-.display,
-h1,
-h2,
-h3 {
-  font-family: 'Kells Uncial', Georgia, 'Times New Roman', Times, serif;
+.display {
+  font-size: 2em;
+  font-family: 'CAT Walzhari', Georgia, 'Times New Roman', Times, serif;
+  line-height: 1em;
+
+  &.lg {
+    font-size: 3em;
+  }
 }
 
 header>nav .brand {
@@ -42,7 +48,11 @@ header>nav .brand {
   text-align: center;
 }
 
-.mb-0 {
+.top-spacing {
+  margin-bottom: 0;
+}
+
+.bottom-spacing {
   margin-bottom: 0;
 }
 
@@ -109,6 +119,10 @@ body>footer {
     linear-gradient(45deg, transparent, var(--crest-blue), transparent);
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
+
+  &.fit {
+    height: fit-content;
+  }
 
   &.sm {
     height: 35dvh;
