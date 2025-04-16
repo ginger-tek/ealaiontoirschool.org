@@ -20,6 +20,7 @@ Disallow: /commerce/digital-download/
 Disallow: /api/
 Allow: /api/ui-extensions/
 Disallow: /static/
+Disallow: /assets/
 Disallow:/*?author=*
 Disallow:/*&author=*
 Disallow:/*?tag=*
