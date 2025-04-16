@@ -3,21 +3,136 @@
   src: url('/assets/fonts/kellunc.woff2') format('woff2');
 }
 
-:root {
-  --crest-blue: #0000bd;
+:root,
+:root:not([data-theme=dark]) {
+  --crest-blue: #3a53a5;
   --crest-red: #e71800;
   --crest-gold: #ffc600;
+
+  --pico-primary: var(--crest-blue);
+  --pico-primary-hover: var(--crest-blue);
 }
 
-h4,
-h5,
-h6,
-p {
+body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  >main {
+    flex: 1;
+  }
 }
 
+.display,
 h1,
 h2,
 h3 {
   font-family: 'Kells Uncial', Georgia, 'Times New Roman', Times, serif;
+}
+
+header>nav .brand {
+  display: flex;
+  align-items: center;
+  gap: .25em;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+
+  &:not(.banner) {
+    border-radius: var(--pico-border-radius);
+  }
+}
+
+body>header {
+  padding-block: 0;
+  background: var(--pico-background-color);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--pico-box-shadow);
+}
+
+body>main>.banner:first-child {
+  margin-top: calc(var(--pico-block-spacing-vertical)*-1);
+  margin-bottom: var(--pico-block-spacing-vertical);
+}
+
+body>footer {
+  background: var(--pico-background-color);
+}
+
+.grid.two-thirds {
+  @media(min-width:1024px) {
+    grid-template-columns: repeat(3, minmax(0%, 1fr));
+
+    &.right>:not(img) {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    &.right>img {
+      grid-column: 1;
+    }
+
+    &.left>:not(img) {
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &.left>img {
+      grid-row: 1;
+      grid-column: 3;
+    }
+  }
+}
+
+.banner {
+  object-fit: cover;
+  object-position: center;
+  width: 100vw;
+  height: 50dvh;
+  overflow: hidden;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(45deg, transparent, var(--crest-blue), transparent);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+
+  &.sm {
+    height: 35dvh;
+  }
+
+  &.top {
+    object-position: top;
+  }
+
+  &.bottom {
+    object-position: bottom;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
