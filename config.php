@@ -19,5 +19,9 @@ $routes = [
     'page' => 'contact.php',
     'meta' => ['title' => 'Contact']
   ],
+  '/donate' => [
+    'page' => 'donate.php',
+    'meta' => ['title' => 'Donate']
+  ],
   '404' => 'notFound.php'
 ];
