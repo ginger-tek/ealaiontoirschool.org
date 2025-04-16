@@ -41,11 +41,24 @@ body {
   }
 }
 
-header>nav .brand {
-  display: flex;
-  align-items: center;
-  gap: .25em;
-  text-decoration: none;
+header>nav {
+  @media (max-width: 680px) {
+    gap: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    >ul:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+    text-decoration: none;
+  }
 }
 
 .center {
