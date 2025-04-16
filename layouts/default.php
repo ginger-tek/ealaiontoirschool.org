@@ -23,7 +23,7 @@
           <a href="/" class="brand">
             <img src="/assets/imgs/Logo_256x256.png" style="width:3em;height:3em" alt="Logo">
             <div>
-              <div class="display">Eala&Iacute;ont&Oacute;ir</div>
+              <div class="display">Eala&iacute;ont&oacute;ir</div>
               <div style="margin-top:-.25em">School of Irish Arts</div>
             </div>
           </a>
@@ -32,6 +32,9 @@
       <ul>
         <li>
           <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>
