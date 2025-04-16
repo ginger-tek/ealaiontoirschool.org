@@ -1,9 +1,9 @@
-<img class="banner sm" src="/assets/imgs/DANCE-2.jpg" alt="Man playing fiddle">
+<img class="banner fit" src="/assets/imgs/DANCE-2_banner.jpg" alt="Man playing fiddle">
 <div class="container">
-  <h1 class="center">About</h1>
+  <h1 class="display lg center">About</h1>
   <section>
     <div class="grid two-thirds right">
-      <img src="/assets/imgs/DANCE-10.jpg">
+      <img src="/assets/imgs/DANCE-10.jpg" alt="Kathleen McLoughlin-Martinez">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore
         magna
@@ -16,7 +16,7 @@
   </section>
   <section>
     <div class="grid two-thirds left">
-      <img src="/assets/imgs/DANCE-13.jpg">
+      <img src="/assets/imgs/DANCE-13.jpg" alt="Alec Martinez">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore
         magna
