@@ -2,8 +2,7 @@
   <section>
     <h1 class="display lg center">The School</h1>
     <p>Ealaíontóir School of Irish Arts is a 501(c)(3) Nonprofit Organization that strives to provide affordable access
-      to
-      a variety of Celtic art forms including, but not limited to, dance, music, language, and fine arts to honor,
+      to a variety of Celtic art forms including, but not limited to, dance, music, language, and fine arts to honor,
       preserve and promote Celtic culture and foster individual expression to the people in Winter Garden and the
       surrounding areas of Florida.</p>
   </section>
