@@ -32,6 +32,10 @@ body {
   font-family: 'CAT Walzhari', Georgia, 'Times New Roman', Times, serif;
   line-height: 1em;
 
+  &.md {
+    font-size: 2.5em;
+  }
+
   &.lg {
     font-size: 3em;
   }
