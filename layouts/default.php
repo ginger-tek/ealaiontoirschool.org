@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="/assets/imgs/Logo_128x128.gif">
   <link rel="preload" href="/assets/fonts/catwalzhari-webfont.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/imgs/Logo_256x256.png" as="image" type="image/png" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" defer>
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
