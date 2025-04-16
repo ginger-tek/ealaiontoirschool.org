@@ -2,4 +2,6 @@
 <div class="container center">
   <h1 class="display lg">Coming Soon!</h1>
   <p>Please visit back periodically to see updates</p>
+  <p>In the meantime, consider donating!</p>
+  <a href="/donate" role="button">Donate Now!</a>
 </div>
