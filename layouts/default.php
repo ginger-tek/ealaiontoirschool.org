@@ -36,6 +36,9 @@
         <li>
           <a href="/contact">Contact</a>
         </li>
+        <li>
+          <a href="/donate">Donate</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -43,7 +46,7 @@
     <?php include $page ?>
   </main>
   <footer class="container center">
-    <small>&copy; Eala&iacute;ont&oacute;ir School of Irish Arts, Inc.</small>
+    <small>&copy; Eala&iacute;ont&oacute;ir School of Irish Arts, Inc. | <a href="/about">About</a> - <a href="/contact">Contact</a> - <a href="/donate">Donate</a></small>
   </footer>
 </body>
 
