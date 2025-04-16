@@ -1,4 +1,3 @@
-<img class="banner fit" src="/assets/imgs/DANCE-2_banner.jpg" alt="Man playing fiddle">
 <div class="container">
   <h1 class="display lg center">About</h1>
   <section>
