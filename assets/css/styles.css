@@ -15,6 +15,7 @@
   --pico-primary-hover: var(--crest-blue);
   --pico-border-radius: .5em;
   --pico-font-family: Georgia, 'Times New Roman', Times, serif;
+  --pico-primary-underline: var(--crest-blue);
 }
 
 body {
